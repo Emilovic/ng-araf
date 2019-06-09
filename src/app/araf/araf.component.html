@@ -1,0 +1,45 @@
+<div id="app" fxFill fxLayout="column" fxLayoutAlign="center center">
+  
+  <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+    <h1>ARAF</h1>
+    <button mat-flat-button color="primary" (click)="roll(0)">Roll</button>
+  </div>
+  
+  <div fxFlex fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="center center" *ngIf="noroll">
+
+    <div>
+        <p>{{player1.name}}</p>
+        <img src="{{player1.imgurl}}">
+        <p>{{player1.champion}}</p>
+      <button mat-flat-button color="primary" (click)="roll(1)">Reroll</button>
+    </div>
+
+    <div>
+      <p>{{player2.name}}</p>
+      <img src="{{player2.imgurl}}">
+      <p>{{player2.champion}}</p>
+      <button mat-flat-button color="primary" (click)="roll(2)">Reroll</button>
+    </div>
+
+    <div>
+        <p>{{player3.name}}</p>
+        <img src="{{player3.imgurl}}">
+        <p>{{player3.champion}}</p>
+      <button mat-flat-button color="primary" (click)="roll(3)">Reroll</button>
+    </div>
+    
+    <div>
+        <p>{{player4.name}}</p>
+        <img src="{{player4.imgurl}}">
+        <p>{{player4.champion}}</p>
+      <button mat-flat-button color="primary" (click)="roll(4)">Reroll</button>
+    </div>
+    
+    <div>
+        <p>{{player5.name}}</p>
+        <img src="{{player5.imgurl}}">
+        <p>{{player5.champion}}</p>
+        <button mat-flat-button color="primary" (click)="roll(5)">Reroll</button>
+    </div>
+  </div>
+</div>
